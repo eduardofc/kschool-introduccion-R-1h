@@ -77,4 +77,7 @@ plot(vect5, vect4, pch = 17) # aquí hablamos de los argumentos
 
 # librerías
 library(lattice)
-xyplot(vect5 ~ vect4, grid = TRUE)
+xyplot(vect5 ~ vect4, 
+       grid = TRUE, 
+       pch=20 , cex=3 , 
+       col=rgb(0.2,0.4,0.8,0.5) )
