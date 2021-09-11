@@ -82,4 +82,12 @@ ggpairs(
   lower = list(continuous = "points", combo = "dot_no_facet")
 )
 
+# interactivo
+library(plotly)
+volcano
+
+fig <- plot_ly(z = ~volcano)
+fig <- fig %>% add_surface()
+
+fig
 
